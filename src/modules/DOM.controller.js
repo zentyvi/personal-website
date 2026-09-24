@@ -215,7 +215,6 @@ const imagesViewer = {
 
   initViewer() {
     this._initButtons();
-    this._initSwipes();
   },
 
   _initButtons() {
@@ -228,44 +227,6 @@ const imagesViewer = {
     nextButton.addEventListener("click", () => this.slideImage(1));
     closeButton.addEventListener("click", this._closeImagesView.bind(this));
     overlay.addEventListener("click", this._closeImagesView);
-  },
-
-  _initSwipes() {
-    const imagesContainer = document.querySelector("#images-view");
-    const minSwipeDistance = 50;
-
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    imagesContainer.addEventListener(
-      "touchstart",
-      (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-      },
-      { passive: true },
-    );
-
-    imagesContainer.addEventListener(
-      "touchend",
-      (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-
-        handleSwipe(this);
-      },
-      { passive: true },
-    );
-
-    const handleSwipe = () => {
-      const distance = touchEndX - touchStartX;
-
-      if (distance < -minSwipeDistance) {
-        this.slideImage(1);
-      }
-
-      if (distance > minSwipeDistance) {
-        this.slideImage(-1);
-      }
-    };
   },
 
   _handleKeys(e) {
