@@ -144,7 +144,6 @@ export const DOMcontroller = {
       const rect = button.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
-      console.log(x, y);
       filler.style.left = `${x}px`;
       filler.style.top = `${y}px`;
     };

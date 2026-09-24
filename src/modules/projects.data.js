@@ -1,6 +1,6 @@
 export const projectsMap = new Map();
-const _pathPreview = "/images/projects/preview";
-const _pathHighResolution = "/images/projects/high-resolution";
+const _pathPreview = "./images/projects/preview";
+const _pathHighResolution = "./images/projects/high-resolution";
 const _github = "https://github.com/zentyvi";
 
 const _projects = [
