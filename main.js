@@ -258,92 +258,75 @@ eval("{\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleEle
 (module, __unused_webpack_exports, __webpack_require__) {
 
 const map = {
-	"./blog-api/image1.png": [
-		"./public/images/projects/high-resolution/blog-api/image1.png",
-		[
-			"public_images_projects_high-resolution_blog-api_image1_png"
-		]
-	],
-	"./blog-api/image2.png": [
-		"./public/images/projects/high-resolution/blog-api/image2.png",
-		[
-			"public_images_projects_high-resolution_blog-api_image2_png"
-		]
-	],
-	"./blog-api/image3.png": [
-		"./public/images/projects/high-resolution/blog-api/image3.png",
-		[
-			"public_images_projects_high-resolution_blog-api_image3_png"
-		]
-	],
-	"./file-uploader/image1.png": [
-		"./public/images/projects/high-resolution/file-uploader/image1.png",
-		[
-			"public_images_projects_high-resolution_file-uploader_image1_png"
-		]
-	],
-	"./file-uploader/image2.png": [
-		"./public/images/projects/high-resolution/file-uploader/image2.png",
-		[
-			"public_images_projects_high-resolution_file-uploader_image2_png"
-		]
-	],
-	"./file-uploader/image3.png": [
-		"./public/images/projects/high-resolution/file-uploader/image3.png",
-		[
-			"public_images_projects_high-resolution_file-uploader_image3_png"
-		]
-	],
-	"./messaging-app/image1.png": [
-		"./public/images/projects/high-resolution/messaging-app/image1.png",
-		[
-			"public_images_projects_high-resolution_messaging-app_image1_png"
-		]
-	],
-	"./messaging-app/image2.png": [
-		"./public/images/projects/high-resolution/messaging-app/image2.png",
-		[
-			"public_images_projects_high-resolution_messaging-app_image2_png"
-		]
-	],
-	"./odin-book/image1.png": [
-		"./public/images/projects/high-resolution/odin-book/image1.png",
-		[
-			"public_images_projects_high-resolution_odin-book_image1_png"
-		]
-	],
-	"./odin-book/image2.png": [
-		"./public/images/projects/high-resolution/odin-book/image2.png",
-		[
-			"public_images_projects_high-resolution_odin-book_image2_png"
-		]
-	],
-	"./odin-book/image3.png": [
-		"./public/images/projects/high-resolution/odin-book/image3.png",
-		[
-			"public_images_projects_high-resolution_odin-book_image3_png"
-		]
-	]
+	"./blog-api/image1.png": "./public/images/projects/high-resolution/blog-api/image1.png",
+	"./blog-api/image2.png": "./public/images/projects/high-resolution/blog-api/image2.png",
+	"./blog-api/image3.png": "./public/images/projects/high-resolution/blog-api/image3.png",
+	"./file-uploader/image1.png": "./public/images/projects/high-resolution/file-uploader/image1.png",
+	"./file-uploader/image2.png": "./public/images/projects/high-resolution/file-uploader/image2.png",
+	"./file-uploader/image3.png": "./public/images/projects/high-resolution/file-uploader/image3.png",
+	"./messaging-app/image1.png": "./public/images/projects/high-resolution/messaging-app/image1.png",
+	"./messaging-app/image2.png": "./public/images/projects/high-resolution/messaging-app/image2.png",
+	"./odin-book/image1.png": "./public/images/projects/high-resolution/odin-book/image1.png",
+	"./odin-book/image2.png": "./public/images/projects/high-resolution/odin-book/image2.png",
+	"./odin-book/image3.png": "./public/images/projects/high-resolution/odin-book/image3.png"
 };
-function webpackAsyncContext(req) {
-	try {
-		if(!__webpack_require__.o(map, req)) {
-			return Promise.resolve().then(() => {
-	const e = new Error("Cannot find module '" + req + "'");
-	e.code = 'MODULE_NOT_FOUND';
-	throw e;
-});
-		}
-	} catch(err) {
-		return Promise.reject(err);
-	}
 
-	const ids = map[req], id = ids[0];
-	return __webpack_require__.e(ids[1][0]).then(() => (__webpack_require__.t(id, 1 | 16)));
+function webpackAsyncContext(req) {
+	return Promise.resolve().then(() => {
+	if(!__webpack_require__.o(map, req)) {
+		const e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	const id = map[req];
+	return __webpack_require__.t(id, 1 | 16);
+});
 }
 webpackAsyncContext.keys = () => (Object.keys(map));
 webpackAsyncContext.id = "./public/images/projects/high-resolution lazy recursive ^\\.\\/.*\\/image.*\\.png$";
 module.exports = webpackAsyncContext;
+
+/***/ },
+
+/***/ "./public/images/projects/high-resolution sync recursive ^\\.\\/.*\\/image.*\\.png$"
+/*!*****************************************************************************!*\
+  !*** ./public/images/projects/high-resolution/ sync ^\.\/.*\/image.*\.png$ ***!
+  \*****************************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+const map = {
+	"./blog-api/image1.png": "./public/images/projects/high-resolution/blog-api/image1.png",
+	"./blog-api/image2.png": "./public/images/projects/high-resolution/blog-api/image2.png",
+	"./blog-api/image3.png": "./public/images/projects/high-resolution/blog-api/image3.png",
+	"./file-uploader/image1.png": "./public/images/projects/high-resolution/file-uploader/image1.png",
+	"./file-uploader/image2.png": "./public/images/projects/high-resolution/file-uploader/image2.png",
+	"./file-uploader/image3.png": "./public/images/projects/high-resolution/file-uploader/image3.png",
+	"./messaging-app/image1.png": "./public/images/projects/high-resolution/messaging-app/image1.png",
+	"./messaging-app/image2.png": "./public/images/projects/high-resolution/messaging-app/image2.png",
+	"./odin-book/image1.png": "./public/images/projects/high-resolution/odin-book/image1.png",
+	"./odin-book/image2.png": "./public/images/projects/high-resolution/odin-book/image2.png",
+	"./odin-book/image3.png": "./public/images/projects/high-resolution/odin-book/image3.png"
+};
+
+
+function webpackContext(req) {
+	const id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		const e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./public/images/projects/high-resolution sync recursive ^\\.\\/.*\\/image.*\\.png$";
 
 /***/ },
 
@@ -354,92 +337,317 @@ module.exports = webpackAsyncContext;
 (module, __unused_webpack_exports, __webpack_require__) {
 
 const map = {
-	"./blog-api/image1.webp": [
-		"./public/images/projects/preview/blog-api/image1.webp",
-		[
-			"public_images_projects_preview_blog-api_image1_webp"
-		]
-	],
-	"./blog-api/image2.webp": [
-		"./public/images/projects/preview/blog-api/image2.webp",
-		[
-			"public_images_projects_preview_blog-api_image2_webp"
-		]
-	],
-	"./blog-api/image3.webp": [
-		"./public/images/projects/preview/blog-api/image3.webp",
-		[
-			"public_images_projects_preview_blog-api_image3_webp"
-		]
-	],
-	"./file-uploader/image1.webp": [
-		"./public/images/projects/preview/file-uploader/image1.webp",
-		[
-			"public_images_projects_preview_file-uploader_image1_webp"
-		]
-	],
-	"./file-uploader/image2.webp": [
-		"./public/images/projects/preview/file-uploader/image2.webp",
-		[
-			"public_images_projects_preview_file-uploader_image2_webp"
-		]
-	],
-	"./file-uploader/image3.webp": [
-		"./public/images/projects/preview/file-uploader/image3.webp",
-		[
-			"public_images_projects_preview_file-uploader_image3_webp"
-		]
-	],
-	"./messaging-app/image1.webp": [
-		"./public/images/projects/preview/messaging-app/image1.webp",
-		[
-			"public_images_projects_preview_messaging-app_image1_webp"
-		]
-	],
-	"./messaging-app/image2.webp": [
-		"./public/images/projects/preview/messaging-app/image2.webp",
-		[
-			"public_images_projects_preview_messaging-app_image2_webp"
-		]
-	],
-	"./odin-book/image1.webp": [
-		"./public/images/projects/preview/odin-book/image1.webp",
-		[
-			"public_images_projects_preview_odin-book_image1_webp"
-		]
-	],
-	"./odin-book/image2.webp": [
-		"./public/images/projects/preview/odin-book/image2.webp",
-		[
-			"public_images_projects_preview_odin-book_image2_webp"
-		]
-	],
-	"./odin-book/image3.webp": [
-		"./public/images/projects/preview/odin-book/image3.webp",
-		[
-			"public_images_projects_preview_odin-book_image3_webp"
-		]
-	]
+	"./blog-api/image1.webp": "./public/images/projects/preview/blog-api/image1.webp",
+	"./blog-api/image2.webp": "./public/images/projects/preview/blog-api/image2.webp",
+	"./blog-api/image3.webp": "./public/images/projects/preview/blog-api/image3.webp",
+	"./file-uploader/image1.webp": "./public/images/projects/preview/file-uploader/image1.webp",
+	"./file-uploader/image2.webp": "./public/images/projects/preview/file-uploader/image2.webp",
+	"./file-uploader/image3.webp": "./public/images/projects/preview/file-uploader/image3.webp",
+	"./messaging-app/image1.webp": "./public/images/projects/preview/messaging-app/image1.webp",
+	"./messaging-app/image2.webp": "./public/images/projects/preview/messaging-app/image2.webp",
+	"./odin-book/image1.webp": "./public/images/projects/preview/odin-book/image1.webp",
+	"./odin-book/image2.webp": "./public/images/projects/preview/odin-book/image2.webp",
+	"./odin-book/image3.webp": "./public/images/projects/preview/odin-book/image3.webp"
 };
-function webpackAsyncContext(req) {
-	try {
-		if(!__webpack_require__.o(map, req)) {
-			return Promise.resolve().then(() => {
-	const e = new Error("Cannot find module '" + req + "'");
-	e.code = 'MODULE_NOT_FOUND';
-	throw e;
-});
-		}
-	} catch(err) {
-		return Promise.reject(err);
-	}
 
-	const ids = map[req], id = ids[0];
-	return __webpack_require__.e(ids[1][0]).then(() => (__webpack_require__.t(id, 1 | 16)));
+function webpackAsyncContext(req) {
+	return Promise.resolve().then(() => {
+	if(!__webpack_require__.o(map, req)) {
+		const e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	const id = map[req];
+	return __webpack_require__.t(id, 1 | 16);
+});
 }
 webpackAsyncContext.keys = () => (Object.keys(map));
 webpackAsyncContext.id = "./public/images/projects/preview lazy recursive ^\\.\\/.*\\/image.*\\.webp$";
 module.exports = webpackAsyncContext;
+
+/***/ },
+
+/***/ "./public/images/projects/preview sync recursive ^\\.\\/.*\\/image.*\\.webp$"
+/*!**********************************************************************!*\
+  !*** ./public/images/projects/preview/ sync ^\.\/.*\/image.*\.webp$ ***!
+  \**********************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+const map = {
+	"./blog-api/image1.webp": "./public/images/projects/preview/blog-api/image1.webp",
+	"./blog-api/image2.webp": "./public/images/projects/preview/blog-api/image2.webp",
+	"./blog-api/image3.webp": "./public/images/projects/preview/blog-api/image3.webp",
+	"./file-uploader/image1.webp": "./public/images/projects/preview/file-uploader/image1.webp",
+	"./file-uploader/image2.webp": "./public/images/projects/preview/file-uploader/image2.webp",
+	"./file-uploader/image3.webp": "./public/images/projects/preview/file-uploader/image3.webp",
+	"./messaging-app/image1.webp": "./public/images/projects/preview/messaging-app/image1.webp",
+	"./messaging-app/image2.webp": "./public/images/projects/preview/messaging-app/image2.webp",
+	"./odin-book/image1.webp": "./public/images/projects/preview/odin-book/image1.webp",
+	"./odin-book/image2.webp": "./public/images/projects/preview/odin-book/image2.webp",
+	"./odin-book/image3.webp": "./public/images/projects/preview/odin-book/image3.webp"
+};
+
+
+function webpackContext(req) {
+	const id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		const e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./public/images/projects/preview sync recursive ^\\.\\/.*\\/image.*\\.webp$";
+
+/***/ },
+
+/***/ "./public/images/projects/high-resolution/blog-api/image1.png"
+/*!********************************************************************!*\
+  !*** ./public/images/projects/high-resolution/blog-api/image1.png ***!
+  \********************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "fe4c7944cb8382520cb5.png";
+
+/***/ },
+
+/***/ "./public/images/projects/high-resolution/blog-api/image2.png"
+/*!********************************************************************!*\
+  !*** ./public/images/projects/high-resolution/blog-api/image2.png ***!
+  \********************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "7fb033be89dd0768ea20.png";
+
+/***/ },
+
+/***/ "./public/images/projects/high-resolution/blog-api/image3.png"
+/*!********************************************************************!*\
+  !*** ./public/images/projects/high-resolution/blog-api/image3.png ***!
+  \********************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "fa84e428ff9a1b7cb243.png";
+
+/***/ },
+
+/***/ "./public/images/projects/high-resolution/file-uploader/image1.png"
+/*!*************************************************************************!*\
+  !*** ./public/images/projects/high-resolution/file-uploader/image1.png ***!
+  \*************************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "189ac41f6763dbeb118e.png";
+
+/***/ },
+
+/***/ "./public/images/projects/high-resolution/file-uploader/image2.png"
+/*!*************************************************************************!*\
+  !*** ./public/images/projects/high-resolution/file-uploader/image2.png ***!
+  \*************************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "5a6b53a327a8abfebc2a.png";
+
+/***/ },
+
+/***/ "./public/images/projects/high-resolution/file-uploader/image3.png"
+/*!*************************************************************************!*\
+  !*** ./public/images/projects/high-resolution/file-uploader/image3.png ***!
+  \*************************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "870b5d3fb33b0fece51b.png";
+
+/***/ },
+
+/***/ "./public/images/projects/high-resolution/messaging-app/image1.png"
+/*!*************************************************************************!*\
+  !*** ./public/images/projects/high-resolution/messaging-app/image1.png ***!
+  \*************************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "f78b9d6ec8fe5c58d1d6.png";
+
+/***/ },
+
+/***/ "./public/images/projects/high-resolution/messaging-app/image2.png"
+/*!*************************************************************************!*\
+  !*** ./public/images/projects/high-resolution/messaging-app/image2.png ***!
+  \*************************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "0ce56703d961752e0673.png";
+
+/***/ },
+
+/***/ "./public/images/projects/high-resolution/odin-book/image1.png"
+/*!*********************************************************************!*\
+  !*** ./public/images/projects/high-resolution/odin-book/image1.png ***!
+  \*********************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "e7bc7467210006727c47.png";
+
+/***/ },
+
+/***/ "./public/images/projects/high-resolution/odin-book/image2.png"
+/*!*********************************************************************!*\
+  !*** ./public/images/projects/high-resolution/odin-book/image2.png ***!
+  \*********************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "bf2223c522fe7f868c4b.png";
+
+/***/ },
+
+/***/ "./public/images/projects/high-resolution/odin-book/image3.png"
+/*!*********************************************************************!*\
+  !*** ./public/images/projects/high-resolution/odin-book/image3.png ***!
+  \*********************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "4e50ac7d954c6105d1e5.png";
+
+/***/ },
+
+/***/ "./public/images/projects/preview/blog-api/image1.webp"
+/*!*************************************************************!*\
+  !*** ./public/images/projects/preview/blog-api/image1.webp ***!
+  \*************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "f3040822ca864af83e4a.webp";
+
+/***/ },
+
+/***/ "./public/images/projects/preview/blog-api/image2.webp"
+/*!*************************************************************!*\
+  !*** ./public/images/projects/preview/blog-api/image2.webp ***!
+  \*************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "9a74b7402eb1ad6e7f03.webp";
+
+/***/ },
+
+/***/ "./public/images/projects/preview/blog-api/image3.webp"
+/*!*************************************************************!*\
+  !*** ./public/images/projects/preview/blog-api/image3.webp ***!
+  \*************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "19ab2b3d4397fe31f67a.webp";
+
+/***/ },
+
+/***/ "./public/images/projects/preview/file-uploader/image1.webp"
+/*!******************************************************************!*\
+  !*** ./public/images/projects/preview/file-uploader/image1.webp ***!
+  \******************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "ebfc0c926ce5ace1620f.webp";
+
+/***/ },
+
+/***/ "./public/images/projects/preview/file-uploader/image2.webp"
+/*!******************************************************************!*\
+  !*** ./public/images/projects/preview/file-uploader/image2.webp ***!
+  \******************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "e0d6c1e9ba1fb016a119.webp";
+
+/***/ },
+
+/***/ "./public/images/projects/preview/file-uploader/image3.webp"
+/*!******************************************************************!*\
+  !*** ./public/images/projects/preview/file-uploader/image3.webp ***!
+  \******************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "2b21d89284558a51f20b.webp";
+
+/***/ },
+
+/***/ "./public/images/projects/preview/messaging-app/image1.webp"
+/*!******************************************************************!*\
+  !*** ./public/images/projects/preview/messaging-app/image1.webp ***!
+  \******************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "9c9b81c267ef7e7c0820.webp";
+
+/***/ },
+
+/***/ "./public/images/projects/preview/messaging-app/image2.webp"
+/*!******************************************************************!*\
+  !*** ./public/images/projects/preview/messaging-app/image2.webp ***!
+  \******************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "f03121740d680e9049b9.webp";
+
+/***/ },
+
+/***/ "./public/images/projects/preview/odin-book/image1.webp"
+/*!**************************************************************!*\
+  !*** ./public/images/projects/preview/odin-book/image1.webp ***!
+  \**************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "8e5766367d39b15f2925.webp";
+
+/***/ },
+
+/***/ "./public/images/projects/preview/odin-book/image2.webp"
+/*!**************************************************************!*\
+  !*** ./public/images/projects/preview/odin-book/image2.webp ***!
+  \**************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "2f3b47808f96d2bbc0f9.webp";
+
+/***/ },
+
+/***/ "./public/images/projects/preview/odin-book/image3.webp"
+/*!**************************************************************!*\
+  !*** ./public/images/projects/preview/odin-book/image3.webp ***!
+  \**************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "709a0b6f8c2ebb90166c.webp";
 
 /***/ },
 
@@ -472,7 +680,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
 (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   projectsMap: () => (/* binding */ projectsMap)\n/* harmony export */ });\nconst projectsMap = new Map();\nconst _pathPreview = \"images/projects/preview\";\nconst _pathHighResolution = \"images/projects/high-resolution\";\nconst _github = \"https://github.com/zentyvi\";\n\nconst _projects = [\n  {\n    title: \"Odin book\",\n    description:\n      \"Full-stack social network application created as the final capstone project for The Odin Project curriculum.\",\n    images_preview: [],\n    images_high_resolution: [],\n    github: `${_github}/odin-book`,\n    preview: \"https://odin-book-zenty.netlify.app/\",\n    prefix: \"odin-book\",\n    imagesNumber: 3,\n  },\n\n  {\n    title: \"Messaging app\",\n    description:\n      \"Full-stack non-real-time messaging application built from scratch as part of The Odin Project curriculum.\",\n    images_preview: [],\n    images_high_resolution: [],\n    github: `${_github}/messaging-app`,\n    preview: \"https://zenty-chat.netlify.app\",\n    prefix: \"messaging-app\",\n    imagesNumber: 2,\n  },\n\n  {\n    title: \"Blog API\",\n    description:\n      \"RESTful Blog application. This repository contains the backend service and two separate frontend clients that interact with the API.\",\n    images_preview: [],\n    images_high_resolution: [],\n    github: `${_github}/blog-api`,\n    preview: \"https://odin-blog-user.netlify.app/\",\n    prefix: \"blog-api\",\n    imagesNumber: 3,\n  },\n\n  {\n    title: \"File uploader\",\n    description:\n      \"Failik is a full-stack cloud file management application. It allows users to create accounts, organize their files into folders, upload assets, and securely share folder contents with unauthenticated users using temporary access links.\",\n    images_preview: [],\n    images_high_resolution: [],\n    github: `${_github}/file-uploader`,\n    preview: \"https://failik.onrender.com\",\n    prefix: \"file-uploader\",\n    imagesNumber: 3,\n  },\n];\n\n_projects.forEach((project) => {\n  projectsMap.set(crypto.randomUUID(), project);\n});\n\nfor (let i of _projects) {\n  const { prefix, imagesNumber, id } = i;\n  for (let j = 1; j < imagesNumber + 1; j++) {\n    const image = new Image();\n    const preview = `${_pathPreview}/${prefix}/image${j}.webp`;\n    __webpack_require__(\"./public/images/projects/preview lazy recursive ^\\\\.\\\\/.*\\\\/image.*\\\\.webp$\")(`./${prefix}/image${j}.webp`);\n\n    image.src = preview;\n\n    i.images_preview.push(preview);\n  }\n}\n\nfor (let i of _projects) {\n  const { prefix, imagesNumber, id } = i;\n  for (let j = 1; j < imagesNumber + 1; j++) {\n    const image = new Image();\n    const highResolution = `${_pathHighResolution}/${prefix}/image${j}.png`;\n    __webpack_require__(\"./public/images/projects/high-resolution lazy recursive ^\\\\.\\\\/.*\\\\/image.*\\\\.png$\")(`./${prefix}/image${j}.png`);\n\n    image.src = highResolution;\n\n    i.images_high_resolution.push(highResolution);\n  }\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvbW9kdWxlcy9wcm9qZWN0cy5kYXRhLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBTztBQUNQO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGVBQWUsUUFBUTtBQUN2QjtBQUNBO0FBQ0E7QUFDQSxHQUFHOztBQUVIO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGVBQWUsUUFBUTtBQUN2QjtBQUNBO0FBQ0E7QUFDQSxHQUFHOztBQUVIO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGVBQWUsUUFBUTtBQUN2QjtBQUNBO0FBQ0E7QUFDQSxHQUFHOztBQUVIO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGVBQWUsUUFBUTtBQUN2QjtBQUNBO0FBQ0E7QUFDQSxHQUFHO0FBQ0g7O0FBRUE7QUFDQTtBQUNBLENBQUM7O0FBRUQ7QUFDQSxVQUFVLDJCQUEyQjtBQUNyQyxrQkFBa0Isc0JBQXNCO0FBQ3hDO0FBQ0EsdUJBQXVCLGFBQWEsR0FBRyxPQUFPLFFBQVEsRUFBRTtBQUN4RCxJQUFJLG1HQUFPLEdBQXNDLEVBQUUsT0FBTyxRQUFRLEVBQUUsTUFBTSxDQUFDOztBQUUzRTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQSxVQUFVLDJCQUEyQjtBQUNyQyxrQkFBa0Isc0JBQXNCO0FBQ3hDO0FBQ0EsOEJBQThCLG9CQUFvQixHQUFHLE9BQU8sUUFBUSxFQUFFO0FBQ3RFLElBQUksMEdBQ0UsR0FBOEMsRUFBRSxPQUFPLFFBQVEsRUFBRSxLQUFLLENBQ3ZFOztBQUVMOztBQUVBO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL3NpdGUvLi9zcmMvbW9kdWxlcy9wcm9qZWN0cy5kYXRhLmpzPzQ0NjMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNvbnN0IHByb2plY3RzTWFwID0gbmV3IE1hcCgpO1xuY29uc3QgX3BhdGhQcmV2aWV3ID0gXCJpbWFnZXMvcHJvamVjdHMvcHJldmlld1wiO1xuY29uc3QgX3BhdGhIaWdoUmVzb2x1dGlvbiA9IFwiaW1hZ2VzL3Byb2plY3RzL2hpZ2gtcmVzb2x1dGlvblwiO1xuY29uc3QgX2dpdGh1YiA9IFwiaHR0cHM6Ly9naXRodWIuY29tL3plbnR5dmlcIjtcblxuY29uc3QgX3Byb2plY3RzID0gW1xuICB7XG4gICAgdGl0bGU6IFwiT2RpbiBib29rXCIsXG4gICAgZGVzY3JpcHRpb246XG4gICAgICBcIkZ1bGwtc3RhY2sgc29jaWFsIG5ldHdvcmsgYXBwbGljYXRpb24gY3JlYXRlZCBhcyB0aGUgZmluYWwgY2Fwc3RvbmUgcHJvamVjdCBmb3IgVGhlIE9kaW4gUHJvamVjdCBjdXJyaWN1bHVtLlwiLFxuICAgIGltYWdlc19wcmV2aWV3OiBbXSxcbiAgICBpbWFnZXNfaGlnaF9yZXNvbHV0aW9uOiBbXSxcbiAgICBnaXRodWI6IGAke19naXRodWJ9L29kaW4tYm9va2AsXG4gICAgcHJldmlldzogXCJodHRwczovL29kaW4tYm9vay16ZW50eS5uZXRsaWZ5LmFwcC9cIixcbiAgICBwcmVmaXg6IFwib2Rpbi1ib29rXCIsXG4gICAgaW1hZ2VzTnVtYmVyOiAzLFxuICB9LFxuXG4gIHtcbiAgICB0aXRsZTogXCJNZXNzYWdpbmcgYXBwXCIsXG4gICAgZGVzY3JpcHRpb246XG4gICAgICBcIkZ1bGwtc3RhY2sgbm9uLXJlYWwtdGltZSBtZXNzYWdpbmcgYXBwbGljYXRpb24gYnVpbHQgZnJvbSBzY3JhdGNoIGFzIHBhcnQgb2YgVGhlIE9kaW4gUHJvamVjdCBjdXJyaWN1bHVtLlwiLFxuICAgIGltYWdlc19wcmV2aWV3OiBbXSxcbiAgICBpbWFnZXNfaGlnaF9yZXNvbHV0aW9uOiBbXSxcbiAgICBnaXRodWI6IGAke19naXRodWJ9L21lc3NhZ2luZy1hcHBgLFxuICAgIHByZXZpZXc6IFwiaHR0cHM6Ly96ZW50eS1jaGF0Lm5ldGxpZnkuYXBwXCIsXG4gICAgcHJlZml4OiBcIm1lc3NhZ2luZy1hcHBcIixcbiAgICBpbWFnZXNOdW1iZXI6IDIsXG4gIH0sXG5cbiAge1xuICAgIHRpdGxlOiBcIkJsb2cgQVBJXCIsXG4gICAgZGVzY3JpcHRpb246XG4gICAgICBcIlJFU1RmdWwgQmxvZyBhcHBsaWNhdGlvbi4gVGhpcyByZXBvc2l0b3J5IGNvbnRhaW5zIHRoZSBiYWNrZW5kIHNlcnZpY2UgYW5kIHR3byBzZXBhcmF0ZSBmcm9udGVuZCBjbGllbnRzIHRoYXQgaW50ZXJhY3Qgd2l0aCB0aGUgQVBJLlwiLFxuICAgIGltYWdlc19wcmV2aWV3OiBbXSxcbiAgICBpbWFnZXNfaGlnaF9yZXNvbHV0aW9uOiBbXSxcbiAgICBnaXRodWI6IGAke19naXRodWJ9L2Jsb2ctYXBpYCxcbiAgICBwcmV2aWV3OiBcImh0dHBzOi8vb2Rpbi1ibG9nLXVzZXIubmV0bGlmeS5hcHAvXCIsXG4gICAgcHJlZml4OiBcImJsb2ctYXBpXCIsXG4gICAgaW1hZ2VzTnVtYmVyOiAzLFxuICB9LFxuXG4gIHtcbiAgICB0aXRsZTogXCJGaWxlIHVwbG9hZGVyXCIsXG4gICAgZGVzY3JpcHRpb246XG4gICAgICBcIkZhaWxpayBpcyBhIGZ1bGwtc3RhY2sgY2xvdWQgZmlsZSBtYW5hZ2VtZW50IGFwcGxpY2F0aW9uLiBJdCBhbGxvd3MgdXNlcnMgdG8gY3JlYXRlIGFjY291bnRzLCBvcmdhbml6ZSB0aGVpciBmaWxlcyBpbnRvIGZvbGRlcnMsIHVwbG9hZCBhc3NldHMsIGFuZCBzZWN1cmVseSBzaGFyZSBmb2xkZXIgY29udGVudHMgd2l0aCB1bmF1dGhlbnRpY2F0ZWQgdXNlcnMgdXNpbmcgdGVtcG9yYXJ5IGFjY2VzcyBsaW5rcy5cIixcbiAgICBpbWFnZXNfcHJldmlldzogW10sXG4gICAgaW1hZ2VzX2hpZ2hfcmVzb2x1dGlvbjogW10sXG4gICAgZ2l0aHViOiBgJHtfZ2l0aHVifS9maWxlLXVwbG9hZGVyYCxcbiAgICBwcmV2aWV3OiBcImh0dHBzOi8vZmFpbGlrLm9ucmVuZGVyLmNvbVwiLFxuICAgIHByZWZpeDogXCJmaWxlLXVwbG9hZGVyXCIsXG4gICAgaW1hZ2VzTnVtYmVyOiAzLFxuICB9LFxuXTtcblxuX3Byb2plY3RzLmZvckVhY2goKHByb2plY3QpID0+IHtcbiAgcHJvamVjdHNNYXAuc2V0KGNyeXB0by5yYW5kb21VVUlEKCksIHByb2plY3QpO1xufSk7XG5cbmZvciAobGV0IGkgb2YgX3Byb2plY3RzKSB7XG4gIGNvbnN0IHsgcHJlZml4LCBpbWFnZXNOdW1iZXIsIGlkIH0gPSBpO1xuICBmb3IgKGxldCBqID0gMTsgaiA8IGltYWdlc051bWJlciArIDE7IGorKykge1xuICAgIGNvbnN0IGltYWdlID0gbmV3IEltYWdlKCk7XG4gICAgY29uc3QgcHJldmlldyA9IGAke19wYXRoUHJldmlld30vJHtwcmVmaXh9L2ltYWdlJHtqfS53ZWJwYDtcbiAgICBpbXBvcnQoYC4uLy4uL3B1YmxpYy9pbWFnZXMvcHJvamVjdHMvcHJldmlldy8ke3ByZWZpeH0vaW1hZ2Uke2p9LndlYnBgKTtcblxuICAgIGltYWdlLnNyYyA9IHByZXZpZXc7XG5cbiAgICBpLmltYWdlc19wcmV2aWV3LnB1c2gocHJldmlldyk7XG4gIH1cbn1cblxuZm9yIChsZXQgaSBvZiBfcHJvamVjdHMpIHtcbiAgY29uc3QgeyBwcmVmaXgsIGltYWdlc051bWJlciwgaWQgfSA9IGk7XG4gIGZvciAobGV0IGogPSAxOyBqIDwgaW1hZ2VzTnVtYmVyICsgMTsgaisrKSB7XG4gICAgY29uc3QgaW1hZ2UgPSBuZXcgSW1hZ2UoKTtcbiAgICBjb25zdCBoaWdoUmVzb2x1dGlvbiA9IGAke19wYXRoSGlnaFJlc29sdXRpb259LyR7cHJlZml4fS9pbWFnZSR7an0ucG5nYDtcbiAgICBpbXBvcnQoXG4gICAgICBgLi4vLi4vcHVibGljL2ltYWdlcy9wcm9qZWN0cy9oaWdoLXJlc29sdXRpb24vJHtwcmVmaXh9L2ltYWdlJHtqfS5wbmdgXG4gICAgKTtcblxuICAgIGltYWdlLnNyYyA9IGhpZ2hSZXNvbHV0aW9uO1xuXG4gICAgaS5pbWFnZXNfaGlnaF9yZXNvbHV0aW9uLnB1c2goaGlnaFJlc29sdXRpb24pO1xuICB9XG59XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/modules/projects.data.js\n\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   projectsMap: () => (/* binding */ projectsMap)\n/* harmony export */ });\nconst projectsMap = new Map();\nconst _github = \"https://github.com/zentyvi\";\n\nconst _projects = [\n  {\n    title: \"Odin book\",\n    description:\n      \"Full-stack social network application created as the final capstone project for The Odin Project curriculum.\",\n    images_preview: [],\n    images_high_resolution: [],\n    github: `${_github}/odin-book`,\n    preview: \"https://odin-book-zenty.netlify.app/\",\n    prefix: \"odin-book\",\n    imagesNumber: 3,\n  },\n\n  {\n    title: \"Messaging app\",\n    description:\n      \"Full-stack non-real-time messaging application built from scratch as part of The Odin Project curriculum.\",\n    images_preview: [],\n    images_high_resolution: [],\n    github: `${_github}/messaging-app`,\n    preview: \"https://zenty-chat.netlify.app\",\n    prefix: \"messaging-app\",\n    imagesNumber: 2,\n  },\n\n  {\n    title: \"Blog API\",\n    description:\n      \"RESTful Blog application. This repository contains the backend service and two separate frontend clients that interact with the API.\",\n    images_preview: [],\n    images_high_resolution: [],\n    github: `${_github}/blog-api`,\n    preview: \"https://odin-blog-user.netlify.app/\",\n    prefix: \"blog-api\",\n    imagesNumber: 3,\n  },\n\n  {\n    title: \"File uploader\",\n    description:\n      \"Failik is a full-stack cloud file management application. It allows users to create accounts, organize their files into folders, upload assets, and securely share folder contents with unauthenticated users using temporary access links.\",\n    images_preview: [],\n    images_high_resolution: [],\n    github: `${_github}/file-uploader`,\n    preview: \"https://failik.onrender.com\",\n    prefix: \"file-uploader\",\n    imagesNumber: 3,\n  },\n];\n\n_projects.forEach((project) => {\n  projectsMap.set(crypto.randomUUID(), project);\n});\n\nfor (let i of _projects) {\n  const { prefix, imagesNumber, id } = i;\n  for (let j = 1; j < imagesNumber + 1; j++) {\n    const image = new Image();\n    const preview = __webpack_require__(\"./public/images/projects/preview sync recursive ^\\\\.\\\\/.*\\\\/image.*\\\\.webp$\")(`./${prefix}/image${j}.webp`);\n    __webpack_require__(\"./public/images/projects/preview lazy recursive ^\\\\.\\\\/.*\\\\/image.*\\\\.webp$\")(`./${prefix}/image${j}.webp`);\n\n    image.src = preview;\n\n    i.images_preview.push(preview);\n  }\n}\n\nfor (let i of _projects) {\n  const { prefix, imagesNumber, id } = i;\n  for (let j = 1; j < imagesNumber + 1; j++) {\n    const image = new Image();\n    const highResolution = __webpack_require__(\"./public/images/projects/high-resolution sync recursive ^\\\\.\\\\/.*\\\\/image.*\\\\.png$\")(`./${prefix}/image${j}.png`);\n    __webpack_require__(\"./public/images/projects/high-resolution lazy recursive ^\\\\.\\\\/.*\\\\/image.*\\\\.png$\")(`./${prefix}/image${j}.png`);\n\n    image.src = highResolution;\n\n    i.images_high_resolution.push(highResolution);\n  }\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvbW9kdWxlcy9wcm9qZWN0cy5kYXRhLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBTztBQUNQOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZSxRQUFRO0FBQ3ZCO0FBQ0E7QUFDQTtBQUNBLEdBQUc7O0FBRUg7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZSxRQUFRO0FBQ3ZCO0FBQ0E7QUFDQTtBQUNBLEdBQUc7O0FBRUg7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZSxRQUFRO0FBQ3ZCO0FBQ0E7QUFDQTtBQUNBLEdBQUc7O0FBRUg7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZSxRQUFRO0FBQ3ZCO0FBQ0E7QUFDQTtBQUNBLEdBQUc7QUFDSDs7QUFFQTtBQUNBO0FBQ0EsQ0FBQzs7QUFFRDtBQUNBLFVBQVUsMkJBQTJCO0FBQ3JDLGtCQUFrQixzQkFBc0I7QUFDeEM7QUFDQSxvQkFBb0IsbUdBQ2QsR0FBc0MsRUFBRSxPQUFPLFFBQVEsRUFBRSxNQUFNLENBRWhFO0FBQ0wsSUFBSSxtR0FBTyxHQUFzQyxFQUFFLE9BQU8sUUFBUSxFQUFFLE1BQU0sQ0FBQzs7QUFFM0U7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0EsVUFBVSwyQkFBMkI7QUFDckMsa0JBQWtCLHNCQUFzQjtBQUN4QztBQUNBLDJCQUEyQiwwR0FDckIsR0FBOEMsRUFBRSxPQUFPLFFBQVEsRUFBRSxLQUFLLENBRXZFO0FBQ0wsSUFBSSwwR0FDRSxHQUE4QyxFQUFFLE9BQU8sUUFBUSxFQUFFLEtBQUssQ0FDdkU7O0FBRUw7O0FBRUE7QUFDQTtBQUNBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vc2l0ZS8uL3NyYy9tb2R1bGVzL3Byb2plY3RzLmRhdGEuanM/NDQ2MyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY29uc3QgcHJvamVjdHNNYXAgPSBuZXcgTWFwKCk7XG5jb25zdCBfZ2l0aHViID0gXCJodHRwczovL2dpdGh1Yi5jb20vemVudHl2aVwiO1xuXG5jb25zdCBfcHJvamVjdHMgPSBbXG4gIHtcbiAgICB0aXRsZTogXCJPZGluIGJvb2tcIixcbiAgICBkZXNjcmlwdGlvbjpcbiAgICAgIFwiRnVsbC1zdGFjayBzb2NpYWwgbmV0d29yayBhcHBsaWNhdGlvbiBjcmVhdGVkIGFzIHRoZSBmaW5hbCBjYXBzdG9uZSBwcm9qZWN0IGZvciBUaGUgT2RpbiBQcm9qZWN0IGN1cnJpY3VsdW0uXCIsXG4gICAgaW1hZ2VzX3ByZXZpZXc6IFtdLFxuICAgIGltYWdlc19oaWdoX3Jlc29sdXRpb246IFtdLFxuICAgIGdpdGh1YjogYCR7X2dpdGh1Yn0vb2Rpbi1ib29rYCxcbiAgICBwcmV2aWV3OiBcImh0dHBzOi8vb2Rpbi1ib29rLXplbnR5Lm5ldGxpZnkuYXBwL1wiLFxuICAgIHByZWZpeDogXCJvZGluLWJvb2tcIixcbiAgICBpbWFnZXNOdW1iZXI6IDMsXG4gIH0sXG5cbiAge1xuICAgIHRpdGxlOiBcIk1lc3NhZ2luZyBhcHBcIixcbiAgICBkZXNjcmlwdGlvbjpcbiAgICAgIFwiRnVsbC1zdGFjayBub24tcmVhbC10aW1lIG1lc3NhZ2luZyBhcHBsaWNhdGlvbiBidWlsdCBmcm9tIHNjcmF0Y2ggYXMgcGFydCBvZiBUaGUgT2RpbiBQcm9qZWN0IGN1cnJpY3VsdW0uXCIsXG4gICAgaW1hZ2VzX3ByZXZpZXc6IFtdLFxuICAgIGltYWdlc19oaWdoX3Jlc29sdXRpb246IFtdLFxuICAgIGdpdGh1YjogYCR7X2dpdGh1Yn0vbWVzc2FnaW5nLWFwcGAsXG4gICAgcHJldmlldzogXCJodHRwczovL3plbnR5LWNoYXQubmV0bGlmeS5hcHBcIixcbiAgICBwcmVmaXg6IFwibWVzc2FnaW5nLWFwcFwiLFxuICAgIGltYWdlc051bWJlcjogMixcbiAgfSxcblxuICB7XG4gICAgdGl0bGU6IFwiQmxvZyBBUElcIixcbiAgICBkZXNjcmlwdGlvbjpcbiAgICAgIFwiUkVTVGZ1bCBCbG9nIGFwcGxpY2F0aW9uLiBUaGlzIHJlcG9zaXRvcnkgY29udGFpbnMgdGhlIGJhY2tlbmQgc2VydmljZSBhbmQgdHdvIHNlcGFyYXRlIGZyb250ZW5kIGNsaWVudHMgdGhhdCBpbnRlcmFjdCB3aXRoIHRoZSBBUEkuXCIsXG4gICAgaW1hZ2VzX3ByZXZpZXc6IFtdLFxuICAgIGltYWdlc19oaWdoX3Jlc29sdXRpb246IFtdLFxuICAgIGdpdGh1YjogYCR7X2dpdGh1Yn0vYmxvZy1hcGlgLFxuICAgIHByZXZpZXc6IFwiaHR0cHM6Ly9vZGluLWJsb2ctdXNlci5uZXRsaWZ5LmFwcC9cIixcbiAgICBwcmVmaXg6IFwiYmxvZy1hcGlcIixcbiAgICBpbWFnZXNOdW1iZXI6IDMsXG4gIH0sXG5cbiAge1xuICAgIHRpdGxlOiBcIkZpbGUgdXBsb2FkZXJcIixcbiAgICBkZXNjcmlwdGlvbjpcbiAgICAgIFwiRmFpbGlrIGlzIGEgZnVsbC1zdGFjayBjbG91ZCBmaWxlIG1hbmFnZW1lbnQgYXBwbGljYXRpb24uIEl0IGFsbG93cyB1c2VycyB0byBjcmVhdGUgYWNjb3VudHMsIG9yZ2FuaXplIHRoZWlyIGZpbGVzIGludG8gZm9sZGVycywgdXBsb2FkIGFzc2V0cywgYW5kIHNlY3VyZWx5IHNoYXJlIGZvbGRlciBjb250ZW50cyB3aXRoIHVuYXV0aGVudGljYXRlZCB1c2VycyB1c2luZyB0ZW1wb3JhcnkgYWNjZXNzIGxpbmtzLlwiLFxuICAgIGltYWdlc19wcmV2aWV3OiBbXSxcbiAgICBpbWFnZXNfaGlnaF9yZXNvbHV0aW9uOiBbXSxcbiAgICBnaXRodWI6IGAke19naXRodWJ9L2ZpbGUtdXBsb2FkZXJgLFxuICAgIHByZXZpZXc6IFwiaHR0cHM6Ly9mYWlsaWsub25yZW5kZXIuY29tXCIsXG4gICAgcHJlZml4OiBcImZpbGUtdXBsb2FkZXJcIixcbiAgICBpbWFnZXNOdW1iZXI6IDMsXG4gIH0sXG5dO1xuXG5fcHJvamVjdHMuZm9yRWFjaCgocHJvamVjdCkgPT4ge1xuICBwcm9qZWN0c01hcC5zZXQoY3J5cHRvLnJhbmRvbVVVSUQoKSwgcHJvamVjdCk7XG59KTtcblxuZm9yIChsZXQgaSBvZiBfcHJvamVjdHMpIHtcbiAgY29uc3QgeyBwcmVmaXgsIGltYWdlc051bWJlciwgaWQgfSA9IGk7XG4gIGZvciAobGV0IGogPSAxOyBqIDwgaW1hZ2VzTnVtYmVyICsgMTsgaisrKSB7XG4gICAgY29uc3QgaW1hZ2UgPSBuZXcgSW1hZ2UoKTtcbiAgICBjb25zdCBwcmV2aWV3ID0gbmV3IFVSTChcbiAgICAgIGAuLi8uLi9wdWJsaWMvaW1hZ2VzL3Byb2plY3RzL3ByZXZpZXcvJHtwcmVmaXh9L2ltYWdlJHtqfS53ZWJwYCxcbiAgICAgIGltcG9ydC5tZXRhLnVybCxcbiAgICApO1xuICAgIGltcG9ydChgLi4vLi4vcHVibGljL2ltYWdlcy9wcm9qZWN0cy9wcmV2aWV3LyR7cHJlZml4fS9pbWFnZSR7an0ud2VicGApO1xuXG4gICAgaW1hZ2Uuc3JjID0gcHJldmlldztcblxuICAgIGkuaW1hZ2VzX3ByZXZpZXcucHVzaChwcmV2aWV3KTtcbiAgfVxufVxuXG5mb3IgKGxldCBpIG9mIF9wcm9qZWN0cykge1xuICBjb25zdCB7IHByZWZpeCwgaW1hZ2VzTnVtYmVyLCBpZCB9ID0gaTtcbiAgZm9yIChsZXQgaiA9IDE7IGogPCBpbWFnZXNOdW1iZXIgKyAxOyBqKyspIHtcbiAgICBjb25zdCBpbWFnZSA9IG5ldyBJbWFnZSgpO1xuICAgIGNvbnN0IGhpZ2hSZXNvbHV0aW9uID0gbmV3IFVSTChcbiAgICAgIGAuLi8uLi9wdWJsaWMvaW1hZ2VzL3Byb2plY3RzL2hpZ2gtcmVzb2x1dGlvbi8ke3ByZWZpeH0vaW1hZ2Uke2p9LnBuZ2AsXG4gICAgICBpbXBvcnQubWV0YS51cmwsXG4gICAgKTtcbiAgICBpbXBvcnQoXG4gICAgICBgLi4vLi4vcHVibGljL2ltYWdlcy9wcm9qZWN0cy9oaWdoLXJlc29sdXRpb24vJHtwcmVmaXh9L2ltYWdlJHtqfS5wbmdgXG4gICAgKTtcblxuICAgIGltYWdlLnNyYyA9IGhpZ2hSZXNvbHV0aW9uO1xuXG4gICAgaS5pbWFnZXNfaGlnaF9yZXNvbHV0aW9uLnB1c2goaGlnaFJlc29sdXRpb24pO1xuICB9XG59XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/modules/projects.data.js\n\n}");
 
 /***/ }
 
@@ -507,9 +715,6 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -562,20 +767,6 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
 /******/ 		}
 /******/ 	};
 /******/ 	
-/******/ 	/* webpack/runtime/ensure chunk */
-/******/ 	__webpack_require__.f = {};
-/******/ 	// This file contains only the entry chunk.
-/******/ 	// The chunk loading function for additional chunks
-/******/ 	__webpack_require__.e = (chunkId) => {
-/******/ 		const promises = [];
-/******/ 		__webpack_require__.f.j(chunkId, promises);
-/******/ 		return Promise.all(promises);
-/******/ 	};
-/******/ 	
-/******/ 	/* webpack/runtime/get javascript chunk filename */
-/******/ 	// This function allow to reference async chunks
-/******/ 	__webpack_require__.u = (chunkId) => (chunkId + ".main.js");
-/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	__webpack_require__.g = (function() {
 /******/ 		if (typeof globalThis === 'object') return globalThis;
@@ -588,51 +779,6 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop));
-/******/ 	
-/******/ 	/* webpack/runtime/load script */
-/******/ 	(() => {
-/******/ 		const inProgress = {};
-/******/ 		const dataWebpackPrefix = "site:";
-/******/ 		// loadScript function to load a script via script tag
-/******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
-/******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
-/******/ 			let script, needAttach;
-/******/ 			if(key !== undefined) {
-/******/ 				const scripts = document.getElementsByTagName("script");
-/******/ 				for(var i = 0; i < scripts.length; i++) {
-/******/ 					const s = scripts[i];
-/******/ 					if(s.getAttribute("src") == url || s.getAttribute("data-webpack") == dataWebpackPrefix + key) { script = s; break; }
-/******/ 				}
-/******/ 			}
-/******/ 			if(!script) {
-/******/ 				needAttach = true;
-/******/ 				script = document.createElement('script');
-/******/ 		
-/******/ 				script.charset = 'utf-8';
-/******/ 				if (__webpack_require__.nc) {
-/******/ 					script.setAttribute("nonce", __webpack_require__.nc);
-/******/ 				}
-/******/ 				script.setAttribute("data-webpack", dataWebpackPrefix + key);
-/******/ 		
-/******/ 				script.src = url;
-/******/ 			}
-/******/ 			inProgress[url] = [done];
-/******/ 			const onScriptComplete = (prev, event) => {
-/******/ 				// avoid mem leaks in IE.
-/******/ 				script.onerror = script.onload = null;
-/******/ 				clearTimeout(timeout);
-/******/ 				const doneFns = inProgress[url];
-/******/ 				delete inProgress[url];
-/******/ 				script.parentNode?.removeChild(script);
-/******/ 				doneFns?.forEach((fn) => (fn(event)));
-/******/ 				if(prev) return prev(event);
-/******/ 			}
-/******/ 			const timeout = setTimeout(onScriptComplete.bind(null, undefined, { type: 'timeout', target: script }), 120000);
-/******/ 			script.onerror = onScriptComplete.bind(null, script.onerror);
-/******/ 			script.onload = onScriptComplete.bind(null, script.onload);
-/******/ 			needAttach && document.head.appendChild(script);
-/******/ 		};
-/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	// define __esModule on exports
@@ -662,95 +808,6 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/^blob:|[?#].*$/g, "").replace(/\/[^/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		// no baseURI
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		const installedChunks = {
-/******/ 			"main": 0
-/******/ 		};
-/******/ 		
-/******/ 		__webpack_require__.f.j = (chunkId, promises) => {
-/******/ 				// JSONP chunk loading for javascript
-/******/ 				let installedChunkData = __webpack_require__.o(installedChunks, chunkId) ? installedChunks[chunkId] : undefined;
-/******/ 				if(installedChunkData !== 0) { // 0 means "already installed".
-/******/ 		
-/******/ 					// a Promise means "currently loading".
-/******/ 					if(installedChunkData) {
-/******/ 						promises.push(installedChunkData[2]);
-/******/ 					} else {
-/******/ 						if(true) { // all chunks have JS
-/******/ 							// setup Promise in chunk cache
-/******/ 							const promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
-/******/ 							promises.push(installedChunkData[2] = promise);
-/******/ 		
-/******/ 							// create error before stack unwound to get useful stacktrace later
-/******/ 							const error = new Error();
-/******/ 							const loadingEnded = (event) => {
-/******/ 								if(__webpack_require__.o(installedChunks, chunkId)) {
-/******/ 									installedChunkData = installedChunks[chunkId];
-/******/ 									if(installedChunkData !== 0) installedChunks[chunkId] = undefined;
-/******/ 									if(installedChunkData) {
-/******/ 										const errorType = event && (event.type === 'load' ? 'missing' : event.type);
-/******/ 										const realSrc = event && event.target && event.target.src;
-/******/ 										error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
-/******/ 										error.name = 'ChunkLoadError';
-/******/ 										error.type = errorType;
-/******/ 										error.request = realSrc;
-/******/ 										error.event = event;
-/******/ 										installedChunkData[1](error);
-/******/ 									}
-/******/ 								}
-/******/ 							};
-/******/ 							__webpack_require__.l(__webpack_require__.p + __webpack_require__.u(chunkId), loadingEnded, "chunk-" + chunkId, chunkId);
-/******/ 						}
-/******/ 					}
-/******/ 				}
-/******/ 		};
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		// no on chunks loaded
-/******/ 		
-/******/ 		// install a JSONP callback for chunk loading
-/******/ 		const webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
-/******/ 			let [chunkIds, moreModules, runtime] = data;
-/******/ 			// add "moreModules" to the modules object,
-/******/ 			// then flag all "chunkIds" as loaded and fire callback
-/******/ 			var moduleId, chunkId, i = 0;
-/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
-/******/ 				for(moduleId in moreModules) {
-/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
-/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
-/******/ 					}
-/******/ 				}
-/******/ 				if(runtime) var result = runtime(__webpack_require__);
-/******/ 			}
-/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
-/******/ 			for(;i < chunkIds.length; i++) {
-/******/ 				chunkId = chunkIds[i];
-/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
-/******/ 					installedChunks[chunkId][0]();
-/******/ 				}
-/******/ 				installedChunks[chunkId] = 0;
-/******/ 			}
-/******/ 		
-/******/ 		}
-/******/ 		
-/******/ 		const chunkLoadingGlobal = self["webpackChunksite"] = self["webpackChunksite"] || [];
-/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
-/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
