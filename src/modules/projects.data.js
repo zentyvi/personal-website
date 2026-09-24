@@ -1,6 +1,4 @@
 export const projectsMap = new Map();
-const _pathPreview = "images/projects/preview";
-const _pathHighResolution = "images/projects/high-resolution";
 const _github = "https://github.com/zentyvi";
 
 const _projects = [
@@ -61,7 +59,10 @@ for (let i of _projects) {
   const { prefix, imagesNumber, id } = i;
   for (let j = 1; j < imagesNumber + 1; j++) {
     const image = new Image();
-    const preview = `${_pathPreview}/${prefix}/image${j}.webp`;
+    const preview = new URL(
+      `../../public/images/projects/preview/${prefix}/image${j}.webp`,
+      import.meta.url,
+    );
     import(`../../public/images/projects/preview/${prefix}/image${j}.webp`);
 
     image.src = preview;
@@ -74,7 +75,10 @@ for (let i of _projects) {
   const { prefix, imagesNumber, id } = i;
   for (let j = 1; j < imagesNumber + 1; j++) {
     const image = new Image();
-    const highResolution = `${_pathHighResolution}/${prefix}/image${j}.png`;
+    const highResolution = new URL(
+      `../../public/images/projects/high-resolution/${prefix}/image${j}.png`,
+      import.meta.url,
+    );
     import(
       `../../public/images/projects/high-resolution/${prefix}/image${j}.png`
     );

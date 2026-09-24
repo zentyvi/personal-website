@@ -7,6 +7,7 @@ export default {
   output: {
     filename: "main.js",
     path: path.resolve(import.meta.dirname, "dist"),
+    publicPath: "auto",
     clean: true,
   },
   devtool: "eval-source-map",
