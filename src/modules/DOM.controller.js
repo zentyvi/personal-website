@@ -226,7 +226,7 @@ const imagesViewer = {
     prevButton.addEventListener("click", () => this.slideImage(-1));
     nextButton.addEventListener("click", () => this.slideImage(1));
     closeButton.addEventListener("click", this._closeImagesView.bind(this));
-    overlay.addEventListener("click", this._closeImagesView);
+    overlay.addEventListener("click", this._closeImagesView.bind(this));
   },
 
   _handleKeys(e) {
@@ -346,7 +346,8 @@ function initSectionAnimations() {
 
   const observerOptions = {
     root: null,
-    threshold: 0.15,
+    rootMargin: "0px 0px -180px 0px",
+    threshold: 0,
   };
 
   const observer = new IntersectionObserver((entries, observerInstance) => {
@@ -361,7 +362,7 @@ function initSectionAnimations() {
 
   sections.forEach((section) => observer.observe(section));
 }
-
+0;
 export function init() {
   document.addEventListener("DOMContentLoaded", initSectionAnimations);
   DOMcontroller.initDom();

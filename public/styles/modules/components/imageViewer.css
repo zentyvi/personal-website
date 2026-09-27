@@ -51,17 +51,17 @@
 }
 
 .viewer__close-button {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  position: fixed;
+  top: var(--buttons-offset);
+  right: var(--buttons-offset);
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: calc(var(--buttons-size) * 1.7);
+  height: calc(var(--buttons-size) * 1.7);
   font-size: 100%;
 }
 
 .slide-button {
-  position: absolute;
+  position: fixed;
   font-size: var(--buttons-size);
   top: 50%;
   transform: translateY(-50%);
@@ -97,7 +97,7 @@
 }
 
 .viewer__bubbles {
-  position: absolute;
+  position: fixed;
   display: flex;
   gap: 0.6rem;
   align-items: center;
