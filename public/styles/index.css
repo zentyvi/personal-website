@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 :root {
-  --primary: #00d1a1;
-  --primary-light: #21efbf;
-  --primary-glow: rgba(0, 209, 161, 0.4);
+  --primary: #494be7;
+  --primary-light: color-mix(in srgb, var(--primary) 100%, #ffffff 10%);
+  --primary-glow: color-mix(in srgb, var(--primary) 100%, transparent 60%);
   --bg-dark: #0a0a0b;
   --bg-card: #111113;
   --bg-card-hover: #313136;
@@ -186,7 +185,7 @@ img {
   align-items: center;
   gap: 8px;
   background: var(--primary);
-  color: #000000;
+  color: #f5f5f5;
   border-radius: 0.8rem;
   font-weight: 600;
 }

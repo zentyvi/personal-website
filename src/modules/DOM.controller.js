@@ -285,6 +285,8 @@ const imagesViewer = {
       if (isSelected) {
         bubble.classList.add("selected");
       }
+      bubble.ariaLabel = `Open image number ${i}`;
+      bubble.ariaPressed = isSelected;
       bubble.ariaLabel = `Open image number ${i + 1}`;
       bubble.value = i;
       bubble.addEventListener("click", handleClick);
@@ -295,6 +297,7 @@ const imagesViewer = {
     const bubbles = document.querySelectorAll(".viewer__bubble");
     bubbles.forEach((bubble, index) => {
       const isSelected = this._currentIndex === index;
+      bubble.ariaPressed = isSelected;
       if (isSelected) {
         bubble.classList.add("selected");
       } else {
@@ -362,7 +365,7 @@ function initSectionAnimations() {
 
   sections.forEach((section) => observer.observe(section));
 }
-0;
+
 export function init() {
   document.addEventListener("DOMContentLoaded", initSectionAnimations);
   DOMcontroller.initDom();
