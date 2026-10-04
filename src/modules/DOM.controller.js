@@ -285,7 +285,6 @@ const imagesViewer = {
       if (isSelected) {
         bubble.classList.add("selected");
       }
-      bubble.ariaLabel = `Open image number ${i}`;
       bubble.ariaPressed = isSelected;
       bubble.ariaLabel = `Open image number ${i + 1}`;
       bubble.value = i;
