@@ -1,4 +1,4 @@
-#projects-container {
+.projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   gap: 1.4rem;
@@ -113,12 +113,12 @@
   align-items: center;
   justify-content: center;
   border: none;
-  background-color: transparent;
-  box-shadow: none;
+  border: 1px dashed var(--border-medium);
 }
 
 .project-placeholder:hover {
-  box-shadow: none;
+  box-shadow: var(--shadow-hard);
+  border: 1px dashed var(--border-medium);
 }
 
 .project-placeholder__content {

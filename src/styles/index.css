@@ -105,18 +105,19 @@ body {
   flex-direction: column;
 }
 
-body:has(.images-viewer.open) {
-  overflow: hidden;
-}
-
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 .section {
-  opacity: 0;
+  /* opacity: 0; */
   --section-margin: 1.6rem;
   display: flex;
   width: 100%;
@@ -135,11 +136,11 @@ img {
 }
 
 .section.card:first-of-type {
-  border-top: none;
+  border-top-width: 0;
 }
 
 .section.card:last-of-type {
-  border-bottom: none;
+  border-bottom-width: 0;
 }
 
 @media (min-width: 768px) {

@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24rem;
+  gap: 28rem;
   max-width: 75rem;
   padding: 0.6rem;
   margin: var(--offset);
