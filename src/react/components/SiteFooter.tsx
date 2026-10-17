@@ -2,12 +2,10 @@ import styles from "../../styles/components/SiteFooter.module.css";
 
 function SiteFooter() {
   return (
-    <footer className={`section card ${styles["contact"]}`}>
-      <div className="container">
-        <h2 className={`section-title ${styles["contact__title"]}`}>
-          Contact me
-        </h2>
-        <div className={styles["contact__block"]}>
+    <footer className={`section card ${styles["contact"]}`} id="contact">
+      <div className="container animate">
+        <h2 className={`section-title`}>Contact me</h2>
+        <div className={`${styles["contact__block"]}`}>
           <ul className={styles["contact__list"]}>
             <li>
               <a

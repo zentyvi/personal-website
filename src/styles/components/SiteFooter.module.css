@@ -1,13 +1,8 @@
 .contact {
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top-width: 1px !important;
-}
-
-.contact__title {
-  margin-bottom: 0.8rem;
+  overflow: hidden;
 }
 
 .contact__block {
@@ -26,6 +21,10 @@
 
 .contact__list a:hover {
   color: var(--text-primary);
+}
+
+.contact__list i {
+  margin-right: 0.3rem;
 }
 
 .contact__list li {
@@ -48,7 +47,7 @@
     justify-content: start;
   }
 
-  .contact__title {
+  .contact h2 {
     text-align: start;
   }
 

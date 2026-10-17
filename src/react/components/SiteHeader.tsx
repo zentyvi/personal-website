@@ -1,4 +1,5 @@
 import styles from "../../styles/components/SiteHeader.module.css";
+import GithubAvatar from "./GithubAvatar.tsx";
 
 function SiteHeader() {
   return (
@@ -31,9 +32,7 @@ function SiteHeader() {
         aria-label="Github profile"
         className={styles["navigation__avatar-wrapper"]}
       >
-        <img
-          src="/images/avatarPlaceholder.png"
-          alt="Avatar"
+        <GithubAvatar
           className={`github-avatar ${styles["navigation__avatar"]}`}
         />
       </a>

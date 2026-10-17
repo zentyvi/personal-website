@@ -26,7 +26,9 @@
   --font-size-lg: clamp(1.25rem, 1.2rem + 0.4vw, 1.75rem);
   --font-size-xl: clamp(1.75rem, 1.6rem + 0.6vw, 2.5rem);
 
-  --shadow-hard: 0 6px 12px rgba(0, 0, 0, 0.6);
+  --shadow-hard: 0 6px 12px rgba(0, 0, 0, 0.5);
+  --shadow-glint: 0 0 0 1px
+    linear-gradient(100deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 1));
 }
 
 *,
@@ -111,36 +113,20 @@ img {
   display: block;
 }
 
-#root {
+#app {
   display: flex;
   flex-direction: column;
 }
 
 .section {
-  /* opacity: 0; */
   --section-margin: 1.6rem;
   display: flex;
   width: 100%;
   padding: 0 1rem;
 }
 
-.section.visible {
-  animation: section-fadeIn 0.3s ease-out forwards;
-}
-
 .section.card {
   background-color: var(--bg-card);
-  border-top: 1px solid var(--border-medium);
-  border-bottom: 1px solid var(--border-medium);
-  box-shadow: var(--shadow-hard);
-}
-
-.section.card:first-of-type {
-  border-top-width: 0;
-}
-
-.section.card:last-of-type {
-  border-bottom-width: 0;
 }
 
 @media (min-width: 768px) {
@@ -151,7 +137,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 87.5rem;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -159,6 +145,14 @@ img {
   margin: var(--section-margin) 0;
   font-size: var(--font-size-xl);
   text-align: center;
+}
+
+.animate {
+  opacity: 0;
+}
+
+.animate.visible {
+  animation: custom-fadeIn 0.3s ease-out forwards;
 }
 
 .btn {
@@ -200,7 +194,7 @@ img {
   position: relative;
   background: var(--bg-card);
   color: var(--text-primary);
-  border: 1px solid var(--border-medium);
+  border: 1px solid var(--border-subtle);
 }
 
 .btn__filler-wrapper {
@@ -250,10 +244,10 @@ img {
   }
 }
 
-@keyframes section-fadeIn {
+@keyframes custom-fadeIn {
   from {
     opacity: 0;
-    transform: translateY(5%);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;

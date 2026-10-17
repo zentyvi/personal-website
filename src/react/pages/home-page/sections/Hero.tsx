@@ -1,16 +1,15 @@
 import Section from "../../../components/Section.tsx";
 import styles from "../../../../styles/sections/Hero.module.css";
+import GithubAvatar from "../../../components/GithubAvatar.tsx";
 
 function Hero() {
   return (
-    <Section labeledBy="hero-label">
+    <Section labeledBy="hero-label" id="about">
       <div className={styles["hero__block"]}>
-        <img
-          src="../public/images/avatarPlaceholder.png"
-          alt="Avatar"
-          className={`github-avatar ${styles["hero__avatar"]}`}
+        <GithubAvatar
+          className={`github-avatar ${styles["hero__avatar"]} animate`}
         />
-        <div className={styles["hero__body"]}>
+        <div className={`${styles["hero__body"]} animate`}>
           <h1 id="hero-label" className={styles["hero__title"]}>
             Hi! I'm Artem!
           </h1>

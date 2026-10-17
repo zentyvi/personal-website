@@ -113,14 +113,11 @@ function Projects() {
   ));
 
   return (
-    <Section labeledBy="projects-label">
-      <h2
-        id="projects-label"
-        className={`section-title ${styles["projects__title"]}`}
-      >
+    <Section labeledBy="projects-label" id="projects">
+      <h2 id="projects-label" className={`section-title animate`}>
         Projects
       </h2>
-      <div className={styles["projects-container"]}>
+      <div className={`${styles["projects-container"]} animate`}>
         {projectCards}
         <article
           className={`${styles["project-card"]} ${styles["project-placeholder"]}`}

@@ -7,6 +7,7 @@
   grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
   gap: 1rem;
   width: 100%;
+  margin-bottom: calc(var(--section-margin) * 2);
 }
 
 .skills-card {
@@ -19,7 +20,7 @@
   padding: 1.2rem;
   overflow: hidden;
   background-color: var(--bg-dark);
-  border: 1px solid var(--border-medium);
+  border: 1px solid var(--border-subtle);
   border-radius: 0.8rem;
   transition: 0.3s all ease;
   box-shadow: var(--shadow-hard);
@@ -34,7 +35,7 @@
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  border-bottom: 1px solid var(--border-medium);
+  border-bottom: 1px solid var(--border-subtle);
   padding-bottom: 0.8rem;
 }
 
@@ -65,11 +66,11 @@
   align-items: center;
   gap: 0.4rem;
   background-color: var(--bg-card);
-  border: 1px solid var(--border-medium);
+  border: 1px solid var(--border-subtle);
   padding: 0.4rem 0.6rem;
   border-radius: 0.5rem;
   font-size: var(--font-size-base);
-  box-shadow: var(--shadow-hard);
+  box-shadow: var(--shadow-hard), var(--shadow-glint);
 }
 
 .skills-card__item img {
