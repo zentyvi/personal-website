@@ -65,7 +65,7 @@ for (const i of projects) {
   const { prefix, imagesNumber } = i;
   for (let j = 1; j < imagesNumber + 1; j++) {
     const image = new Image();
-    const preview = `/images/projects/preview/${prefix}/image${j}.webp`;
+    const preview = `images/projects/preview/${prefix}/image${j}.webp`;
 
     image.src = preview;
 
@@ -77,7 +77,7 @@ for (const i of projects) {
   const { prefix, imagesNumber } = i;
   for (let j = 1; j < imagesNumber + 1; j++) {
     const image = new Image();
-    const highResolution = `/images/projects/high-resolution/${prefix}/image${j}.png`;
+    const highResolution = `images/projects/high-resolution/${prefix}/image${j}.png`;
 
     image.src = highResolution;
 
