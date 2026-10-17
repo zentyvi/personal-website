@@ -1,7 +1,6 @@
 {
   "name": "site",
   "private": true,
-  "homepage": "https://zentyvi.github.io/personal-website",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
