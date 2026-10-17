@@ -1,7 +1,17 @@
-export const projectsMap = new Map();
 const _github = "https://github.com/zentyvi";
 
-const _projects = [
+interface Project {
+  title: string;
+  description: string;
+  images_preview: Array<string>;
+  images_high_resolution: Array<string>;
+  github: `https://github.com/zentyvi/${string}`;
+  preview: `https://${string}`;
+  prefix: string;
+  imagesNumber: number;
+}
+
+export const projects: Array<Project> = [
   {
     title: "Odin book",
     description:
@@ -51,19 +61,11 @@ const _projects = [
   },
 ];
 
-_projects.forEach((project) => {
-  projectsMap.set(crypto.randomUUID(), project);
-});
-
-for (let i of _projects) {
-  const { prefix, imagesNumber, id } = i;
+for (const i of projects) {
+  const { prefix, imagesNumber } = i;
   for (let j = 1; j < imagesNumber + 1; j++) {
     const image = new Image();
-    const preview = new URL(
-      `../../public/images/projects/preview/${prefix}/image${j}.webp`,
-      import.meta.url,
-    );
-    import(`../../public/images/projects/preview/${prefix}/image${j}.webp`);
+    const preview = `/images/projects/preview/${prefix}/image${j}.webp`;
 
     image.src = preview;
 
@@ -71,17 +73,11 @@ for (let i of _projects) {
   }
 }
 
-for (let i of _projects) {
-  const { prefix, imagesNumber, id } = i;
+for (const i of projects) {
+  const { prefix, imagesNumber } = i;
   for (let j = 1; j < imagesNumber + 1; j++) {
     const image = new Image();
-    const highResolution = new URL(
-      `../../public/images/projects/high-resolution/${prefix}/image${j}.png`,
-      import.meta.url,
-    );
-    import(
-      `../../public/images/projects/high-resolution/${prefix}/image${j}.png`
-    );
+    const highResolution = `/images/projects/high-resolution/${prefix}/image${j}.png`;
 
     image.src = highResolution;
 
